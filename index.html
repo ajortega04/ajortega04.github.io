@@ -1,95 +1,504 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portafolio profesional de André Ortega, Administrador de Bases de Datos especializado en Oracle Database y Microsoft SQL Server.">
+  <meta name="description"
+    content="Portafolio técnico de André Ortega, Ingeniero en Ciencias y Sistemas, DBA especializado en Oracle y SQL Server.">
   <meta name="theme-color" content="#0b1120">
-  <title>André Ortega | Database Administrator</title>
+  <title>André Ortega | Ingeniero DBA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="grid-bg"></div>
+
   <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="André Ortega, inicio"><span class="brand-mark">AO</span><span>ANDRÉ ORTEGA<span class="brand-sub">DATABASE ADMINISTRATOR</span></span></a>
-    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <a class="brand" href="#inicio" aria-label="André Ortega, inicio">
+      <span class="brand-mark">AO</span>
+      <span data-en="ANDRÉ ORTEGA">ANDRÉ ORTEGA<span class="brand-sub" data-en="DATABASE ADMINISTRATOR">DATABASE
+          ADMINISTRATOR</span></span>
+    </a>
+
+    <div class="header-actions">
+      <button id="lang-toggle" class="lang-btn" aria-label="Switch language">EN</button>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </div>
+
     <nav class="nav" aria-label="Navegación principal">
-      <a href="#sobre-mi">Sobre mí</a><a href="#habilidades">Habilidades</a><a href="#proyectos">Proyectos</a><a href="#laboratorio">Laboratorio</a><a class="nav-contact" href="#contacto">Contacto <span>↗</span></a>
+      <a href="#sobre-mi" data-en="About me">Sobre mí</a>
+      <a href="#trayectoria" data-en="Experience">Trayectoria</a>
+      <a href="#habilidades" data-en="Skills">Habilidades</a>
+      <a href="#certificaciones" data-en="Certificates">Certificaciones</a>
+      <a href="#proyectos" data-en="Projects">Proyectos</a>
+      <a href="#laboratorio" data-en="DBA Lab">Laboratorio</a>
+      <a class="nav-contact" href="#contacto"><span data-en="Contact">Contacto</span> <span>↗</span></a>
     </nav>
   </header>
 
   <main>
     <section class="hero section-wrap" id="inicio">
       <div class="hero-copy">
-        <div class="eyebrow"><span class="status-dot"></span> GUATEMALA, GUATEMALA <span class="eyebrow-line"></span> PORTAFOLIO PROFESIONAL</div>
-        <p class="hero-kicker">DATABASE ADMINISTRATOR <span>·</span> ORACLE & SQL SERVER</p>
-        <h1>Administrando datos.<br><span class="gradient-text">Construyendo soluciones.</span></h1>
-        <p class="hero-description">Soy André Ortega, Ingeniero en Ciencias y Sistemas con aproximadamente 2 años de experiencia trabajando con bases de datos y soluciones empresariales.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#proyectos">Explorar proyectos <span>↘</span></a><a class="button button-ghost" href="#contacto">Contactarme <span>↗</span></a><a class="button button-ghost" href="cv-andre-ortega.pdf" download>Descargar CV <span>↓</span></a></div>
-        <div class="hero-meta"><span>01 / PERFIL DBA</span><span>ORACLE DATABASE</span><span>MICROSOFT SQL SERVER</span></div>
+        <div class="eyebrow"><span class="status-dot"></span> GUATEMALA, GUATEMALA <span class="eyebrow-line"></span>
+          <span data-en="PROFESSIONAL PORTFOLIO">PORTAFOLIO PROFESIONAL</span>
+        </div>
+        <p class="hero-kicker">INGENIERO EN CIENCIAS Y SISTEMAS <span>·</span> DBA</p>
+        <h1 data-en="Managing data.<br><span class='gradient-text'>Building solutions.</span>">Administrando
+          datos.<br><span class="gradient-text">Construyendo soluciones.</span></h1>
+        <p class="hero-description"
+          data-en="I am André Ortega, a Systems Engineer with ~2 years of experience in database administration and enterprise solutions. Specialized in Oracle Database and Microsoft SQL Server.">
+          Soy André Ortega, Ingeniero en Ciencias y Sistemas con aproximadamente 2 años de experiencia en administración
+          de bases de datos y soluciones empresariales. Especializado en Oracle Database y Microsoft SQL Server.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#proyectos"><span data-en="Explore projects">Explorar proyectos</span>
+            <span>↘</span></a>
+          <a class="button button-ghost" href="#contacto"><span data-en="Contact me">Contactarme</span>
+            <span>↗</span></a>
+          <a class="button button-ghost" href="cv-andre-ortega.pdf" download><span data-en="Download CV">Descargar
+              CV</span> <span>↓</span></a>
+        </div>
+        <div class="hero-meta">
+          <span>01 / <span data-en="DBA PROFILE">PERFIL DBA</span></span>
+          <span>ORACLE DATABASE 10G</span>
+          <span>MICROSOFT SQL SERVER 2022</span>
+        </div>
       </div>
-      <div class="hero-visual" aria-label="Ilustración conceptual de una base de datos">
+      <div class="hero-visual" aria-hidden="true">
         <div class="visual-grid"></div>
-        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-        <div class="db-core"><div class="db-cylinder"><span></span><span></span><span></span></div><div class="core-label">DATA<br>INTEGRITY</div></div>
-        <div class="float-card card-query"><span class="card-icon">⌘</span><div><small>QUERY STATUS</small><strong>OPTIMIZED</strong></div><i></i></div>
-        <div class="float-card card-secure"><span class="card-icon">◈</span><div><small>DATA PROTECTION</small><strong>BACKUP · RECOVERY</strong></div></div>
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="db-core">
+          <div class="db-cylinder"><span></span><span></span><span></span></div>
+          <div class="core-label">DATA<br>INTEGRITY</div>
+        </div>
+        <div class="float-card card-query"><span class="card-icon">⌘</span>
+          <div><small data-en="SQL TOOLKIT">HERRAMIENTAS SQL</small><strong>SQL · PL/SQL · T-SQL</strong></div><i></i>
+        </div>
+        <div class="float-card card-secure"><span class="card-icon">◈</span>
+          <div><small data-en="DATA PROTECTION">PROTECCIÓN DE DATOS</small><strong data-en="BACKUP · RECOVERY">RESPALDOS · RECUPERACIÓN</strong></div>
+        </div>
         <div class="visual-caption">FIG. 01 <span>DATA SYSTEMS / 2026</span></div>
       </div>
     </section>
 
     <section class="quick-strip section-wrap">
-      <div><span class="strip-label">01</span><strong>Oracle Database</strong><small>SQL · PL/SQL</small></div>
-      <div><span class="strip-label">02</span><strong>Microsoft SQL Server</strong><small>SQL · T-SQL</small></div>
-      <div><span class="strip-label">03</span><strong>Administración DBA</strong><small>Backups · Mantenimiento</small></div>
-      <div><span class="strip-label">04</span><strong>Soluciones empresariales</strong><small>Diseño · Integración</small></div>
+      <div><span class="strip-label">01</span><strong>Oracle Database</strong><small>SQL · PL/SQL · 10g</small></div>
+      <div><span class="strip-label">02</span><strong>Microsoft SQL Server</strong><small>SQL · T-SQL · 2022</small>
+      </div>
+      <div><span class="strip-label">03</span><strong data-en="DBA Administration">Administración DBA</strong><small
+          data-en="Backups · Monitoring">Backups · Monitoreo</small></div>
+      <div><span class="strip-label">04</span><strong data-en="Enterprise Solutions">Soluciones
+          empresariales</strong><small data-en="Design · Integration">Diseño · Integración</small></div>
     </section>
 
     <section class="content-section section-wrap" id="sobre-mi">
-      <div class="section-heading"><p class="section-index">01 / SOBRE MÍ</p><h2>Datos confiables.<br><span class="muted">Operaciones estables.</span></h2></div>
-      <div class="about-content"><p class="lead">Me enfoco en la administración y gestión de bases de datos, procurando que la información sea íntegra, disponible y útil para los procesos del negocio.</p><p>He participado en el diseño, desarrollo y mantenimiento de soluciones empresariales utilizando Oracle Database y Microsoft SQL Server. Mi experiencia incluye consultas SQL, procedimientos almacenados, funciones, triggers, respaldos, validación e integridad de información, así como integración de bases de datos con aplicaciones.</p><p>Me interesa continuar profundizando en la administración, optimización, monitoreo y disponibilidad de plataformas de datos.</p><div class="about-tags"><span>ANÁLISIS</span><span>RESOLUCIÓN DE PROBLEMAS</span><span>DOCUMENTACIÓN</span><span>MEJORA CONTINUA</span></div></div>
+      <div class="section-heading">
+        <p class="section-index">01 / <span data-en="ABOUT ME">SOBRE MÍ</span></p>
+        <h2 data-en="Reliable data.<br><span class='muted'>Stable operations.</span>">Datos confiables.<br><span
+            class="muted">Operaciones estables.</span></h2>
+      </div>
+      <div class="about-content">
+        <p class="lead"
+          data-en="I am a Systems Engineer specialized in database administration, with a strong focus on integrity, availability, and data usefulness for business processes.">
+          Soy Ingeniero en Ciencias y Sistemas especializado en administración de bases de datos, con un fuerte enfoque
+          en la integridad, disponibilidad y utilidad de la información para los procesos de negocio.</p>
+        <p
+          data-en="I have ~2 years of experience working with Oracle Database (10g) and Microsoft SQL Server (2022). I have participated in the design, development, and maintenance of enterprise solutions in areas such as Human Resources, Finance, and Inventory. My experience includes advanced SQL, PL/SQL, T-SQL, stored procedures, triggers, jobs, backups, restoration, monitoring, and database integration with web/mobile applications.">
+          Cuento con aproximadamente 2 años de experiencia trabajando con Oracle Database (10g) y Microsoft SQL Server
+          (2022). He participado en el diseño, desarrollo y mantenimiento de soluciones empresariales en áreas como
+          Recursos Humanos, Finanzas e Inventarios. Mi experiencia incluye SQL avanzado, PL/SQL, T-SQL, procedimientos
+          almacenados, triggers, jobs, respaldos, restauración, monitoreo e integración de bases de datos con
+          aplicaciones web/móviles.</p>
+        <p
+          data-en="My profile combines deep database administration with software development. This allows me to understand how applications consume data and how to optimize performance from both the database engine and the application layer.">
+          Mi perfil combina la administración profunda de bases de datos con el desarrollo de software. Esto me permite
+          entender cómo las aplicaciones consumen los datos y cómo optimizar el rendimiento tanto desde el motor de base
+          de datos como desde la capa de aplicación.</p>
+        <div class="about-tags">
+          <span data-en="ANALYSIS">ANÁLISIS</span>
+          <span data-en="PROBLEM SOLVING">RESOLUCIÓN DE PROBLEMAS</span>
+          <span data-en="DOCUMENTATION">DOCUMENTACIÓN</span>
+          <span data-en="CONTINUOUS IMPROVEMENT">MEJORA CONTINUA</span>
+          <span data-en="DISASTER RECOVERY">RECUPERACIÓN ANTE DESASTRES</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section section-wrap" id="trayectoria">
+      <div class="section-heading">
+        <p class="section-index">02 / <span data-en="EXPERIENCE">TRAYECTORIA</span></p>
+        <h2 data-en="Professional path.<br><span class='muted'>Real impact.</span>">Camino profesional.<br><span
+            class="muted">Impacto real.</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Feb 2025 – <span data-en="Present">Presente</span></span>
+            <h3 data-en="Database Administrator – Denimville, S.A.">Administrador de Base de Datos – Denimville, S.A.
+            </h3>
+            <p
+              data-en="Administration, maintenance, and monitoring of Oracle Database and Microsoft SQL Server enterprise databases. Advanced SQL query development, stored procedures, triggers, jobs, and backup plans. Automation, report generation, and incident resolution.">
+              Administración, mantenimiento y monitoreo de bases de datos empresariales Oracle Database y Microsoft SQL
+              Server. Desarrollo de consultas SQL avanzadas, procedimientos almacenados, triggers, jobs y planes de
+              respaldo. Automatización, generación de reportes y resolución de incidencias.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Feb 2025 – Mar 2026</span>
+            <h3 data-en="Software Developer (EPS) – Hospital Nacional de Especialidades Quirúrgicas de Villa Nueva">
+              Desarrollador de Software (EPS) – Hospital Nacional de Especialidades Quirúrgicas de Villa Nueva</h3>
+            <p
+              data-en="Design and implementation of functionalities for an institutional HR system with Microsoft SQL Server 2022. Database design from scratch, entity-relationship modeling, business logic, integration with biometric ZKTeco devices, and web application development in PHP 8.3 under MVC. <a href='https://biblioglifos.ingenieria.usac.edu.gt/opac/record/23943?&query=@idioma=@material=@sortby=sorttitle@keywords=ortega%20de%20paz&recnum=1' target='_blank' class='thesis-link'>View Thesis ↗</a>">
+              Diseño e implementación de funcionalidades para un sistema institucional de Recursos Humanos con Microsoft
+              SQL Server 2022. Diseño de base de datos desde cero, modelado entidad-relación, lógica de negocio,
+              integración con dispositivos biométricos ZKTeco y desarrollo de aplicación web en PHP 8.3. <a
+                href='https://biblioglifos.ingenieria.usac.edu.gt/opac/record/23943?&query=@idioma=@material=@sortby=sorttitle@keywords=ortega%20de%20paz&recnum=1'
+                target='_blank' class='thesis-link'>Ver Tesis ↗</a></p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2019 – 2026</span>
+            <h3 data-en="Engineering in Computer Science – Universidad de San Carlos de Guatemala (USAC)">Ingeniería en
+              Ciencias y Sistemas – Universidad de San Carlos de Guatemala (USAC)</h3>
+            <p
+              data-en="Graduated as a Systems Engineer. General graduation exam passed on November 11, 2026. Academic training in databases, software development, systems analysis, data structures, and technology project management.">
+              Graduado como Ingeniero en Ciencias y Sistemas. Examen general de graduación aprobado el 11 de noviembre
+              de 2026. Formación académica en bases de datos, desarrollo de software, análisis de sistemas, estructuras
+              de datos y gestión de proyectos tecnológicos.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="content-section skills-section" id="habilidades">
       <div class="section-wrap">
-        <div class="section-heading"><p class="section-index">02 / HABILIDADES TÉCNICAS</p><h2>Herramientas para<br><span class="muted">gestionar información.</span></h2></div>
-        <div class="skills-grid">
-          <article class="skill-card"><div class="skill-top"><span class="skill-number">A</span><span class="skill-symbol">◉</span></div><h3>Motores de bases de datos</h3><p>Trabajo con plataformas relacionales para gestionar y consultar información.</p><div class="pills"><span>Oracle Database</span><span>SQL Server</span></div></article>
-          <article class="skill-card"><div class="skill-top"><span class="skill-number">B</span><span class="skill-symbol">⌘</span></div><h3>Lenguajes y programación SQL</h3><p>Construcción de consultas y lógica de base de datos.</p><div class="pills"><span>SQL</span><span>PL/SQL</span><span>T-SQL</span></div></article>
-          <article class="skill-card"><div class="skill-top"><span class="skill-number">C</span><span class="skill-symbol">▤</span></div><h3>Administración DBA</h3><p>Tareas de operación, mantenimiento y protección de datos.</p><div class="pills"><span>Backups / Restore</span><span>Monitoreo</span><span>Mantenimiento</span><span>Usuarios y permisos</span></div></article>
-          <article class="skill-card"><div class="skill-top"><span class="skill-number">D</span><span class="skill-symbol">⌬</span></div><h3>Desarrollo e integración</h3><p>Conexión de bases de datos con aplicaciones y herramientas.</p><div class="pills"><span>PHP</span><span>Python</span><span>React</span><span>Integración</span></div></article>
+        <div class="section-heading">
+          <p class="section-index">03 / <span data-en="TECHNICAL SKILLS">HABILIDADES TÉCNICAS</span></p>
+          <h2 data-en="Tools to<br><span class='muted'>manage information.</span>">Herramientas para<br><span
+              class="muted">gestionar información.</span></h2>
         </div>
-        <p class="skills-note"><span>NOTA</span> Las habilidades se presentan de acuerdo con experiencia práctica y participación en proyectos; no representan certificaciones oficiales.</p>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-top"><span class="skill-number">A</span><span class="skill-symbol">◉</span></div>
+            <h3 data-en="Database Engines">Motores de bases de datos</h3>
+            <p data-en="Relational platforms for data management and querying.">Plataformas relacionales para gestión y
+              consulta de datos.</p>
+            <div class="pills"><span>Oracle 10g</span><span>SQL Server 2022</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top"><span class="skill-number">B</span><span class="skill-symbol">⌘</span></div>
+            <h3 data-en="SQL Languages & Programming">Lenguajes y programación SQL</h3>
+            <p data-en="Building queries, stored procedures, and database logic.">Construcción de consultas,
+              procedimientos y lógica de base de datos.</p>
+            <div class="pills"><span>SQL</span><span>PL/SQL</span><span>T-SQL</span><span>CTE</span><span>JOINs</span>
+            </div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top"><span class="skill-number">C</span><span class="skill-symbol">▤</span></div>
+            <h3 data-en="DBA Administration">Administración DBA</h3>
+            <p data-en="Operation, maintenance, and data protection tasks.">Tareas de operación, mantenimiento y
+              protección de datos.</p>
+            <div class="pills"><span>Backups</span><span>Restore</span><span>Monitoring</span><span>Users &
+                Roles</span><span>Jobs</span><span>Stored Procedures</span><span>Functions</span><span>Triggers</span>
+              <span>Views</span><span>Indexes</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top"><span class="skill-number">D</span><span class="skill-symbol">⌬</span></div>
+            <h3 data-en="Development & Integration">Desarrollo e integración</h3>
+            <p data-en="Connecting databases with enterprise applications.">Conexión de bases de datos con aplicaciones
+              empresariales.</p>
+            <div class="pills"><span>PHP
+                8.3</span><span>Python</span><span>React</span><span>MVC</span><span>ZKTeco</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top"><span class="skill-number">E</span><span class="skill-symbol">◫</span></div>
+            <h3 data-en="Business Intelligence">Inteligencia de Negocios</h3>
+            <p data-en="Analysis and reporting for decision-making.">Análisis y generación de reportes para la toma de
+              decisiones.</p>
+            <div class="pills"><span>Excel Avanzado</span><span>Power BI</span><span>Power
+                Query</span><span>Reporting</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top"><span class="skill-number">F</span><span class="skill-symbol">⚙</span></div>
+            <h3 data-en="Infrastructure & Servers">Infraestructura y Servidores</h3>
+            <p data-en="Operating systems and server environments.">Sistemas operativos y entornos de servidor.</p>
+            <div class="pills"><span>Oracle Linux</span><span>Windows
+                Server</span><span>Ubuntu</span><span>SQL*Plus</span><span>SSMS</span></div>
+          </article>
+        </div>
+        <p class="skills-note"><span>NOTA</span> <span
+            data-en="Skills are presented based on practical experience and project participation; they do not represent official certifications.">Las
+            habilidades se presentan de acuerdo con experiencia práctica y participación en proyectos; no representan
+            certificaciones oficiales.</span></p>
       </div>
     </section>
 
+    <!-- SECCIÓN DE PROYECTOS -->
     <section class="content-section section-wrap" id="proyectos">
-      <div class="section-heading projects-heading"><div><p class="section-index">03 / PROYECTOS SELECCIONADOS</p><h2>Experiencia aplicada.<br><span class="muted">Soluciones reales.</span></h2></div><p class="heading-aside">Una selección de proyectos en los que he participado desde la perspectiva de datos, desarrollo e integración.</p></div>
-      <div class="projects-list">
-        <article class="project-card featured"><div class="project-visual visual-hr"><span class="visual-tag">01 / SQL SERVER 2022</span><div class="schema-art"><div class="schema-node node-main">EMPLEADOS</div><div class="schema-node node-left">PUESTOS</div><div class="schema-node node-right">DEPARTAMENTOS</div><div class="schema-node node-bottom">MOVIMIENTOS</div><i class="connector c1"></i><i class="connector c2"></i><i class="connector c3"></i></div><span class="visual-foot">DATA MODEL / HR</span></div><div class="project-info"><p class="project-type">PROYECTO EPS · RECURSOS HUMANOS</p><h3>Sistema de Recursos Humanos</h3><p>Diseño y construcción de la base de datos para una solución de gestión de Recursos Humanos del Hospital Nacional de Especialidades Quirúrgicas de Villa Nueva.</p><ul><li>Diseño de base de datos desde cero.</li><li>Modelado de entidades, relaciones e integridad.</li><li>SQL Server 2022 e integración con PHP 8.3 bajo arquitectura MVC.</li></ul><div class="project-tags"><span>SQL SERVER</span><span>MODELADO</span><span>PHP MVC</span></div></div></article>
-        <article class="project-card"><div class="project-visual visual-oracle"><span class="visual-tag">02 / ORACLE DATABASE</span><div class="code-art"><span>CREATE OR REPLACE</span><b>PROCEDURE</b><span> controlar_horas_extras</span><em>BEGIN</em><i>  -- lógica de procesamiento</i><em>END;</em></div><span class="visual-foot">BUSINESS PROCESS / HR</span></div><div class="project-info"><p class="project-type">GESTIÓN DE RECURSOS HUMANOS</p><h3>Sistema de Control de Horas Extras</h3><p>Solución para apoyar el control de horas extras, con Oracle como motor de base de datos e integración con componentes desarrollados en React y Python.</p><ul><li>Consultas SQL y procedimientos almacenados.</li><li>Procesamiento de información para el control operativo.</li><li>Integración entre aplicación y base de datos.</li></ul><div class="project-tags"><span>ORACLE</span><span>SQL / PL/SQL</span><span>REACT</span><span>PYTHON</span></div></div></article>
-        <article class="project-card"><div class="project-visual visual-inventory"><span class="visual-tag">03 / SQL SERVER</span><div class="inventory-art"><div class="inventory-row"><b>ITEM</b><b>STOCK</b><b>ESTADO</b></div><div class="inventory-row"><span>Activo 001</span><span>128</span><i>●</i></div><div class="inventory-row"><span>Activo 002</span><span>064</span><i>●</i></div><div class="inventory-row"><span>Activo 003</span><span>215</span><i>●</i></div></div><span class="visual-foot">INVENTORY DATA</span></div><div class="project-info"><p class="project-type">GESTIÓN DE INVENTARIO · SAT</p><h3>Sistema de Inventarios</h3><p>Participación en una solución de inventarios con SQL Server y aplicación desarrollada en PHP.</p><ul><li>Consultas y validaciones de información.</li><li>Gestión de datos relacionados con inventario.</li><li>Integración entre la aplicación y SQL Server.</li></ul><div class="project-tags"><span>SQL SERVER</span><span>PHP</span><span>VALIDACIÓN</span></div></div></article>
-        <article class="project-card"><div class="project-visual visual-enterprise"><span class="visual-tag">04 / ORACLE DATABASE</span><div class="enterprise-art"><div class="enterprise-circle">HR</div><div class="enterprise-line"></div><div class="enterprise-box">WEB APP</div><div class="enterprise-line"></div><div class="enterprise-box">MOBILE</div></div><span class="visual-foot">ENTERPRISE SYSTEMS</span></div><div class="project-info"><p class="project-type">SOLUCIONES EMPRESARIALES</p><h3>Sistemas de Recursos Humanos – Denimville</h3><p>Participación en soluciones web y móviles de Recursos Humanos, trabajando con Oracle Database y aplicaciones desarrolladas en PHP.</p><ul><li>Consultas y gestión de información.</li><li>Soporte a la integración de aplicaciones.</li><li>Trabajo con datos de procesos de Recursos Humanos.</li></ul><div class="project-tags"><span>ORACLE</span><span>PHP</span><span>RECURSOS HUMANOS</span></div></div></article>
+      <div class="section-heading projects-heading">
+        <div>
+          <p class="section-index">05 / <span data-en="SELECTED PROJECTS">PROYECTOS SELECCIONADOS</span></p>
+          <h2 data-en="Real projects.<br><span class='muted'>Data at the core.</span>">Proyectos reales.<br><span
+              class="muted">Datos en el centro.</span></h2>
+        </div>
+        <p class="heading-aside"
+          data-en="Human resources, overtime, and inventory: enterprise systems I have worked on, from the database to the application.">
+          Recursos humanos, horas extras e inventarios: sistemas empresariales en los que he trabajado, desde la base de
+          datos hasta la aplicación.</p>
       </div>
-      <p class="confidential-note"><span>↗</span> La información se presenta de forma general y no incluye datos personales, credenciales, código propietario ni información confidencial de las organizaciones.</p>
+
+      <div class="projects-grid">
+        <article class="project-card project-featured">
+          <div class="project-visual visual-hr" aria-hidden="true">
+            <svg class="schema-art" viewBox="0 0 320 200">
+              <path d="M160 100 L62 35 M160 100 L258 35 M160 100 L62 165 M160 100 L258 165"/>
+              <rect x="10" y="20" width="104" height="30" rx="5"/><text x="62" y="39" data-en="SHIFTS">TURNOS</text>
+              <rect x="206" y="20" width="104" height="30" rx="5"/><text x="258" y="39" data-en="LEAVE">PERMISOS</text>
+              <rect x="10" y="150" width="104" height="30" rx="5"/><text x="62" y="169" data-en="VACATIONS">VACACIONES</text>
+              <rect x="206" y="150" width="104" height="30" rx="5"/><text x="258" y="169" data-en="ABSENCES">AUSENCIAS</text>
+              <g class="main"><rect x="108" y="85" width="104" height="30" rx="5"/><text x="160" y="104" data-en="EMPLOYEES">EMPLEADOS</text></g>
+            </svg>
+          </div>
+          <div class="project-info">
+            <p class="project-type" data-en="EPS PROJECT · VILLA NUEVA HOSPITAL">PROYECTO EPS · HOSPITAL DE VILLA NUEVA</p>
+            <h3 data-en="Human Resources System">Sistema de Recursos Humanos</h3>
+            <p class="project-role" data-en="Software Developer (supervised professional practice)">Desarrollador de Software (EPS)</p>
+            <p class="project-desc" data-en="Institutional system for Hospital Nacional de Especialidades Quirúrgicas de Villa Nueva, with a database designed from scratch and a web application.">Sistema institucional para el Hospital Nacional de Especialidades Quirúrgicas de Villa Nueva, con la base de datos diseñada desde cero y una aplicación web.</p>
+            <ul class="project-points">
+              <li data-en="Entity-relationship modeling and business logic in SQL Server">Modelado entidad-relación y lógica de negocio en SQL Server</li>
+              <li data-en="Management of employees, shifts, leave, vacations, and absences">Gestión de empleados, turnos, permisos, vacaciones y ausencias</li>
+              <li data-en="Operational reports and approval workflows">Reportes operativos y flujos de aprobación</li>
+              <li data-en="Attendance tracking with ZKTeco biometric devices">Control de asistencia con biométricos ZKTeco</li>
+            </ul>
+            <div class="project-tags"><span>SQL SERVER 2022</span><span data-en="MODELING">MODELADO</span><span>PHP 8.3</span><span>MVC</span><span>ZKTECO</span></div>
+            <a class="project-link" href="https://biblioglifos.ingenieria.usac.edu.gt/opac/record/23943?&amp;query=@idioma=@material=@sortby=sorttitle@keywords=ortega%20de%20paz&amp;recnum=1" target="_blank" rel="noopener noreferrer"
+              data-en="View thesis ↗">Ver tesis ↗</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-oracle" aria-hidden="true">
+            <div class="code-art">
+              <span><b>CREATE OR REPLACE PROCEDURE</b></span>
+              <span>&nbsp;&nbsp;controlar_horas_extras</span>
+              <span><em>BEGIN</em></span>
+              <span><i>&nbsp;&nbsp;-- processing logic</i></span>
+              <span><em>END;</em></span>
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-type" data-en="DENIMVILLE · ORACLE">DENIMVILLE · ORACLE</p>
+            <h3 data-en="Overtime Control System">Control de Horas Extras</h3>
+            <p class="project-role" data-en="Lead developer">Desarrollador principal</p>
+            <p class="project-desc" data-en="Integrated solution to manage and query overtime information.">Solución integrada para gestionar y consultar la información de horas extras.</p>
+            <ul class="project-points">
+              <li data-en="Data access and processing with Python">Acceso y procesamiento de datos con Python</li>
+              <li data-en="Department-level information for follow-up">Información por departamento para su seguimiento</li>
+              <li data-en="Automated queries and reports">Consultas y reportes automatizados</li>
+            </ul>
+            <div class="project-tags"><span>ORACLE</span><span>PL/SQL</span><span>PYTHON</span><span>REACT</span></div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-enterprise" aria-hidden="true">
+            <div class="enterprise-art">
+              <div class="enterprise-box">WEB</div>
+              <div class="enterprise-line"></div>
+              <div class="enterprise-circle">ORACLE</div>
+              <div class="enterprise-line"></div>
+              <div class="enterprise-box" data-en="MOBILE">MÓVIL</div>
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-type" data-en="DENIMVILLE · ORACLE">DENIMVILLE · ORACLE</p>
+            <h3 data-en="HR Web &amp; Mobile App">RR.HH. Web y Móvil</h3>
+            <p class="project-role" data-en="Lead developer">Desarrollador principal</p>
+            <p class="project-desc" data-en="Web and mobile application to access staff information.">Aplicación web y móvil para acceder a la información del personal.</p>
+            <ul class="project-points">
+              <li data-en="Viewing and updating employee records">Consulta y actualización de registros de empleados</li>
+              <li data-en="Contracts, attendance, and positions">Módulos de contratos, asistencia y puestos</li>
+              <li data-en="Database integration with application services">Integración de la base de datos con los servicios</li>
+            </ul>
+            <div class="project-tags"><span>ORACLE</span><span>PL/SQL</span><span>PHP</span></div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-inventory" aria-hidden="true">
+            <div class="inventory-art">
+              <div class="inventory-row"><b data-en="ITEM">PRODUCTO</b><b>STOCK</b><b data-en="STATUS">ESTADO</b></div>
+              <div class="inventory-row"><span data-en="Item 001">Producto 001</span><span>128</span><i>●</i></div>
+              <div class="inventory-row"><span data-en="Item 002">Producto 002</span><span>064</span><i>●</i></div>
+              <div class="inventory-row"><span data-en="Item 003">Producto 003</span><span>215</span><i>●</i></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-type" data-en="OPERATIONS CONTROL · SQL SERVER">CONTROL OPERATIVO · SQL SERVER</p>
+            <h3 data-en="Inventory Control System">Control de Inventarios</h3>
+            <p class="project-role" data-en="Lead developer">Desarrollador principal</p>
+            <p class="project-desc" data-en="System to control incoming and outgoing products.">Sistema para controlar las entradas y salidas de productos.</p>
+            <ul class="project-points">
+              <li data-en="Tracking of inventory movements">Seguimiento de movimientos de inventario</li>
+              <li data-en="Queries and data access from PHP">Consultas y acceso a datos desde PHP</li>
+              <li data-en="Reports for product traceability">Reportes para la trazabilidad de productos</li>
+            </ul>
+            <div class="project-tags"><span>SQL SERVER</span><span>PHP</span><span data-en="TRACEABILITY">TRAZABILIDAD</span></div>
+          </div>
+        </article>
+      </div>
+      <p class="confidential-note"><span>↗</span> <span
+          data-en="Information is presented in a general manner and does not include personal data, credentials, proprietary code, or confidential information from organizations.">La
+          información se presenta de forma general y no incluye datos personales, credenciales, código propietario ni
+          información confidencial de las organizaciones.</span></p>
     </section>
 
-    <section class="content-section lab-section" id="laboratorio"><div class="section-wrap">
-      <div class="section-heading"><p class="section-index">04 / LABORATORIO DBA</p><h2>Aprendizaje continuo.<br><span class="muted">Práctica documentada.</span></h2></div>
-      <p class="lab-intro">Un espacio para publicar ejercicios independientes, pruebas controladas y documentación técnica sobre administración de bases de datos.</p>
-      <div class="lab-grid">
-        <article><span class="lab-icon">01</span><h3>Backup & Recovery</h3><p>Prácticas de respaldo, restauración y validación de estrategias de recuperación.</p><span class="lab-status">PLANIFICADO</span></article>
-        <article><span class="lab-icon">02</span><h3>SQL Performance</h3><p>Consultas, índices y análisis de planes de ejecución con escenarios de prueba.</p><span class="lab-status">PLANIFICADO</span></article>
-        <article><span class="lab-icon">03</span><h3>Database Security</h3><p>Administración de usuarios, roles, permisos y buenas prácticas de seguridad.</p><span class="lab-status">PLANIFICADO</span></article>
-      </div>
-    </div></section>
+    <section class="content-section certifications-section" id="certificaciones">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <p class="section-index">04 / <span data-en="CERTIFICATES">CERTIFICACIONES</span></p>
+          <h2 data-en="Learning in progress.<br><span class='muted'>Skills in practice.</span>">Aprendizaje en curso.<br><span
+              class="muted">Conocimientos en práctica.</span></h2>
+        </div>
+        <p class="certifications-intro"
+          data-en="Selected certificates that complement my hands-on experience. I continue studying databases and SQL, and will add new credentials as I complete them.">
+          Certificados que complementan mi experiencia práctica. Continúo estudiando bases de datos y SQL, y agregaré
+          nuevas credenciales conforme las complete.</p>
 
-    <section class="contact-section section-wrap" id="contacto"><div class="contact-panel"><p class="section-index">05 / CONTACTO</p><h2>Hablemos de<br><span class="gradient-text">datos y oportunidades.</span></h2><p>Estoy interesado en oportunidades profesionales relacionadas con administración de bases de datos y plataformas de datos.</p><div class="contact-links"><a href="mailto:jortega5538@gmail.com">Correo electrónico <span>↗</span></a><a href="https://www.linkedin.com/in/joaquinortega04/" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a><a href="https://github.com/ajortega04" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a></div><p class="contact-hint">También puedes descargar mi CV en PDF desde el botón de esta página.</p></div></section>
+        <div class="certifications-grid">
+          <article class="certificate-card">
+            <div class="certificate-icon" aria-hidden="true">B2</div>
+            <div class="certificate-copy">
+              <p class="certificate-type" data-en="LANGUAGE">IDIOMAS</p>
+              <h3 data-en="English proficiency — B2 level">Inglés — Nivel B2</h3>
+              <p class="certificate-issuer">Platzi</p>
+              <a class="certificate-link" href="B2.pdf" target="_blank" rel="noopener noreferrer"
+                data-en="View certificate ↗">Ver certificado ↗</a>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <div class="certificate-icon certificate-icon-sql" aria-hidden="true">SQL</div>
+            <div class="certificate-copy">
+              <p class="certificate-type" data-en="DATABASES">BASES DE DATOS</p>
+              <h3 data-en="Database Fundamentals and SQL">Fundamentos de Bases de Datos y SQL</h3>
+              <p class="certificate-issuer">Platzi</p>
+              <a class="certificate-link" href="diploma-fundamentos-bbdd-sql.pdf" target="_blank"
+                rel="noopener noreferrer" data-en="View certificate ↗">Ver certificado ↗</a>
+            </div>
+          </article>
+        </div>
+        <p class="certificates-note" data-en="This section will grow as I complete additional training.">
+          Esta sección crecerá a medida que complete nuevas formaciones.</p>
+      </div>
+    </section>
+
+    <section class="content-section lab-section" id="laboratorio">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <p class="section-index">06 / <span data-en="DBA LAB">LABORATORIO DBA</span></p>
+          <h2 data-en="Continuous learning.<br><span class='muted'>Documented practice.</span>">Aprendizaje
+            continuo.<br><span class="muted">Práctica documentada.</span></h2>
+        </div>
+        <p class="lab-intro"
+          data-en="A space to document real incidents, technical research, and lessons learned in database administration.">
+          Un espacio para documentar incidentes reales, investigaciones técnicas y lecciones aprendidas en
+          administración de bases de datos.</p>
+
+        <div class="lab-grid">
+          <article
+            style="grid-column: span 3; background: linear-gradient(135deg, #131f31 0%, #1a2d42 100%); border-color: #4ab9d9;">
+            <span class="lab-icon" style="font-size: 14px; color: #6bd8f5;">★ CASO DE ESTUDIO REAL</span>
+            <h3 data-en="Production Database Recovery: Backup & Disaster Recovery"
+              style="font-size: 20px; color: #fff; margin-top: 15px;">Recuperación de Base de Datos en Producción:
+              Backup & Disaster Recovery</h3>
+            <p data-en="A production database experienced corruption on a Wednesday. The only available backup was from the previous Sunday. I led the recovery process: restoring the environment from the backup, rebuilding necessary objects, and recovering operations. <br><br><strong>Key Lessons:</strong> Backup frequency is critical. Having backups is not enough—you must verify they can be restored. A Disaster Recovery Plan is essential. Business continuity depends on data availability and integrity."
+              style="color: #b0c4d8; font-size: 13px; max-width: 900px;">Una base de datos de producción presentó
+              corrupción un miércoles. El único respaldo disponible era del domingo anterior. Lideré el proceso de
+              recuperación: restaurar el entorno desde el respaldo, reconstruir los objetos necesarios y recuperar la
+              operación. <br><br><strong>Lecciones aprendidas:</strong> La frecuencia de los respaldos es fundamental.
+              No basta con tener backups, hay que verificar que puedan restaurarse. Es importante contar con un Plan de
+              Recuperación ante Desastres. La continuidad del negocio depende de la disponibilidad e integridad de los
+              datos.</p>
+            <span class="lab-status"
+              style="background: #1a3a4a; color: #6bd8f5; border-color: #3e8aa5; margin-top: 15px;"
+              data-en="DOCUMENTED CASE">CASO DOCUMENTADO</span>
+          </article>
+
+          <article>
+            <span class="lab-icon">01</span>
+            <h3 data-en="SQL Performance & Diagnostics">Rendimiento y Diagnóstico SQL</h3>
+            <p
+              data-en="Research and analysis of MAXDOP, Buffer Pool, DMVs, sp_who2, locks, and execution plans in SQL Server. In Oracle: SGA_TARGET, session monitoring, and DBA_USERS.">
+              Investigación y análisis de MAXDOP, Buffer Pool, DMVs, sp_who2, bloqueos y planes de ejecución en SQL
+              Server. En Oracle: SGA_TARGET, monitoreo de sesiones y DBA_USERS.</p>
+            <span class="lab-status" data-en="TECHNICAL RESEARCH">INVESTIGACIÓN TÉCNICA</span>
+          </article>
+
+          <article>
+            <span class="lab-icon">02</span>
+            <h3 data-en="Oracle NOARCHIVELOG Risk Analysis">Análisis de Riesgo en Oracle NOARCHIVELOG</h3>
+            <p
+              data-en="Technical analysis of a ~350 GB Oracle 10g instance (ORCL) with 4,000+ users in NOARCHIVELOG mode. Implications for recovery, log file growth, and backup strategies.">
+              Análisis técnico de una instancia Oracle 10g (ORCL) de ~350 GB con más de 4,000 usuarios en modo
+              NOARCHIVELOG. Implicaciones para recuperación, crecimiento de logs y estrategias de respaldo.</p>
+            <span class="lab-status" data-en="TECHNICAL RESEARCH">INVESTIGACIÓN TÉCNICA</span>
+          </article>
+
+          <article>
+            <span class="lab-icon">03</span>
+            <h3 data-en="Centralized Monitoring Architecture">Arquitectura de Monitoreo Centralizado</h3>
+            <p
+              data-en="Evaluation of Zabbix and Viewself for monitoring Oracle Linux and Windows Server without installing agents on database servers. Querying DMVs and administrative views.">
+              Evaluación de Zabbix y Viewself para monitorear Oracle Linux y Windows Server sin instalar agentes en los
+              servidores de base de datos. Consulta de DMVs y vistas administrativas.</p>
+            <span class="lab-status" data-en="RESEARCH & EVALUATION">INVESTIGACIÓN Y EVALUACIÓN</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-wrap" id="contacto">
+      <div class="contact-panel">
+        <p class="section-index">07 / <span data-en="CONTACT">CONTACTO</span></p>
+        <h2 data-en="Let's talk about<br><span class='gradient-text'>data and opportunities.</span>">Hablemos
+          de<br><span class="gradient-text">datos y oportunidades.</span></h2>
+        <p
+          data-en="I am interested in professional opportunities related to database administration, data platforms, and enterprise solutions.">
+          Estoy interesado en oportunidades profesionales relacionadas con administración de bases de datos, plataformas
+          de datos y soluciones empresariales.</p>
+        <div class="contact-links">
+          <a href="mailto:jortega5538@gmail.com"><span data-en="Email">Correo electrónico</span> <span>↗</span></a>
+          <a href="https://www.linkedin.com/in/joaquinortega04/" target="_blank" rel="noopener noreferrer">LinkedIn
+            <span>↗</span></a>
+          <a href="https://github.com/ajortega04" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+        </div>
+        <p class="contact-hint" data-en="You can also download my CV in PDF from the button on this page.">También
+          puedes descargar mi CV en PDF desde el botón de esta página.</p>
+      </div>
+    </section>
   </main>
-  <footer class="footer section-wrap"><a class="brand footer-brand" href="#inicio"><span class="brand-mark">AO</span><span>ANDRÉ ORTEGA<span class="brand-sub">DATABASE ADMINISTRATOR</span></span></a><span>© <span id="year"></span> ANDRÉ ORTEGA · GUATEMALA</span><a href="#inicio">VOLVER ARRIBA ↑</a></footer>
+
+  <footer class="footer section-wrap">
+    <a class="brand footer-brand" href="#inicio">
+      <span class="brand-mark">AO</span>
+      <span>ANDRÉ ORTEGA<span class="brand-sub" data-en="DATABASE ADMINISTRATOR">DATABASE ADMINISTRATOR</span></span>
+    </a>
+    <span>© <span id="year"></span> ANDRÉ ORTEGA · GUATEMALA</span>
+    <a href="#inicio" data-en="BACK TO TOP ↑">VOLVER ARRIBA ↑</a>
+  </footer>
+
   <script src="script.js"></script>
 </body>
+
 </html>
